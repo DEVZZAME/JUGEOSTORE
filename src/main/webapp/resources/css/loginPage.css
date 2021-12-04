@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+
+}
+
+
+.bg_img1{
+	opacity:0.7;
+	z-index:-99;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bg_img2{
+	opacity:1;
+	z-index:-100;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	/* background-color: rgba(32, 128, 238, 0.63); */
+	
+}
+
+.header div {
+	color: ivory;
+	text-align: center;
+	line-height: normal;
+	font-family: cursive;
+	font-size: 70px;
+	word-spacing: 20px;
+	letter-spacing: 5px;
+	margin:30px;
+	/* margin-top: 60px;
+	margin-left:600px;
+	margin-bottom: 50px; */
+}
+/* .header img {
+	object-position: center top;
+	object-position: 10px -70px;
+	
+	margin-top:-500px;
+	margin-left:1000px;
+	text-align: center;
+	line-height: normal;
+	
+	
+} */
+
+.container {
+	width: 1200px;
+	height: 750px;
+	border: none;
+	border-radius: 55px;
+	margin: 40px auto;
+	position: relative;
+	background-color: rgb(255, 255, 255);
+	
+}
+
+.login_left {
+	width: 600px;
+	height: 750px;
+	float: left; 
+	background-image: url(/jung/resources/img/balloon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top-left-radius: 55px;
+	border-bottom-left-radius: 55px;
+}
+
+.login_right {
+	width: 600px;
+	float: right;
+}
+
+/* -------------------------- header ------------------------------ */
+
+.big, .id_text, .pwd_text, .btn_login, .find_info, .footer p {
+	font-family: NotoSansKR;
+}
+/* -------------------------- /header ----------------------------- */
+
+/* -------------------------- main -------------------------------- */
+.main {
+	width: 100%;
+	height: 550px;
+	position: relative;
+}
+
+.main > img {
+	position: absolute;
+	left: 108px;
+}
+
+.big {
+	font-size: 65px;
+	font-weight: bold;
+	margin-top: 57px;
+	margin-bottom: 10px;
+}
+
+.small {
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+	margin-top: 28px;
+	font-family: italic 1.2em "Fira Sans", serif;
+	 text-align:center;
+}
+
+li {
+	list-style-type: none;
+}
+
+.login_form {
+	margin-top: 60px;
+}
+
+.id_text, .pwd_text {
+	width: 300px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.btn_login {
+	width: 333px;
+	margin-top: 20px;
+	padding: 15px 0;
+	background-color: #8EA8DB;
+	color: white;
+	border: none;
+	border-radius: 120px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.find_info {
+	margin-top: 10px;
+	color:#8C8C8C;
+}
+
+.find_info a {
+	font-size: 15px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: black;
+}
+
+.bar {
+	display: inline-block;
+	width: 1px;
+	height: 12px;
+	text-indent: -999em;
+	background: #dce0dc;
+	vertical-align: middle;
+}
+
+.big, form, .find_info {
+	text-align: center;
+}
+/* -------------------------- /main ------------------------------- */
+
+/* -------------------------- footer ------------------------------ */
+.footer {
+	width: 100%;
+	height: 135px;
+	position: relative;
+}
+
+hr {
+	width: 350px;
+	position: absolute;
+	left: 126px;
+}
+
+.footer p {
+	float: left;
+	margin-top: 48px;
+	margin-left: 126px;
+	font-family: D2Coding;
+	font-size: 17px;
+	color:#8C8C8C;
+}
+
+.btn_naver, .btn_kakao, .btn_facebook {
+	background-color: white;
+	border: none;
+	cursor: pointer;
+	float: right;
+	margin: 7px;
+}
+
+.simple_login {
+	position: absolute;
+	top: 25px;
+	right: 115px;
+	
+	
+}
+/* -------------------------- /footer ----------------------------- */

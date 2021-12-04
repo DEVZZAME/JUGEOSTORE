@@ -1,0 +1,20 @@
+숙박테이블
+
+create sequence seq_stay_hotelno;
+
+create table STAY(
+	hotelno NUMBER(3) primary key,
+	hotelname VARCHAR2(100) not null unique,
+	hoteladdr VARCHAR2(50) not null,
+	hotelprice VARCHAR2(30) not null,
+	city VARCHAR2(30) not null
+);
+
+insert into STAY values(
+	seq_stay_hotelno.nextVal,
+	'강남역 복층 좋아',
+	'서울시 서초구 서초동 100',
+	'58,000',
+	'서초구'
+);
+commit;

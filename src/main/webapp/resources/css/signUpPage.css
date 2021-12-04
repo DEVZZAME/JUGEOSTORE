@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+
+/* .img{
+	opacity:0.5;
+} */
+
+/* .header {
+	width: 100%;
+	height: 100px;
+	background-color: rgba(32, 128, 238, 0.705);
+} */
+
+.bg_img1{
+	opacity:0.7;
+	z-index:-99;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bg_img2{
+	opacity:1;
+	z-index:-100;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header{
+	color: #8EA8DB;
+	text-align: center;
+	line-height: 100px;
+	font-style: oblique;
+	font-stretch: 50%;
+	font-size: 80px;
+	word-spacing: 20px;
+	letter-spacing: 5px;
+	
+}
+.container {
+	z-index:1;
+	width: 1200px;
+	height: 750px;
+	border: none;
+	border-radius: 55px;
+	margin : 50px auto;
+	position: relative;
+	background-color: rgb(255, 255, 255);
+	
+	
+}
+/* .container {
+	width: 100%;
+	height: 750px;
+	margin: 50px auto;
+	box-sizing: border-box;
+	background-color: rgba(112, 197, 231, 0.13);
+} */
+
+
+
+.signUp_left {
+	width: 600px;
+	height: 750px;
+	float: left;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top-left-radius: 55px;
+	border-bottom-left-radius: 55px;
+}
+
+.border {
+	height: 520px;
+	margin-top: 105px;
+	border-right: 2px solid rgba(128, 128, 128, 0.301);
+	width:center;
+}
+.image{
+	margin-top:30px;
+}
+
+.signUp_right {
+	width: 600px;
+	height: 750px;
+	float: right;
+	/* position: relative; */
+}
+
+.name_text, .id_text, .pwd_text, .phoneno_text, .email_text, .addr_text
+	{
+	width: 250px;
+	padding: 14px;
+	margin-bottom: 30px;
+	border: none;	
+	border-bottom: 1px solid rgba(122, 199, 230, 0.548);
+	border-width: 3px;
+	background-color: rgba(235, 235, 188, 0);
+	font-size:15px
+}
+
+.name_text, .id_text, .pwd_text, .phoneno_text, .email_text, .addr_text:focus
+	{
+	outline: none;
+}
+
+li {
+	list-style: none;
+}
+
+.main {
+	position: absolute;
+	top: 100px;
+	left: 760px;
+	width: 100%;
+	height: 550px;
+}
+
+.id_check {
+	position: absolute;
+	left: 200px;
+	top: 120px;	
+	cursor: pointer;
+	font-size:15px;
+	padding:3px;
+	border-radius: 10px;
+	background:white;
+}
+
+.email_check {
+	position: absolute;
+	left: 200px;
+	bottom: 165px;
+	cursor: pointer;
+	font-size:15px;
+	padding:3px;
+	border-radius: 10px;
+	background:white;
+}
+
+.main p {
+	font-size:70px;
+	color: black;
+	letter-spacing: 1px;
+	font: italic 1.2em "Fira Sans", serif;
+	margin-bottom: 30px;
+	margin-top:-30px;
+	text-align:center;
+	display: flex;
+	/* justify-content: start; */
+}
+
+.btn_signUp {
+	background-color: #8EA8DB;
+	padding: 15px 0;
+	color: white;
+	border: none;
+	border-radius: 120px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+}

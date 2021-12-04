@@ -1,0 +1,23 @@
+회원가입테이블
+
+create sequence seq_customer_idx;
+create table CUSTOMER(
+	idx NUMBER(3) primary key,
+	name VARCHAR2(50) not null,
+	id VARCHAR2(50) not null unique,
+	pwd VARCHAR2(50) not null,
+	phoneno VARCHAR2(20) not null,
+	email VARCHAR2(50) not null unique,
+	addr VARCHAR2(200)
+);
+
+insert into CUSTOMER values(
+	seq_customer_idx.nextVal,
+	'정미혜',
+	'jessy',
+	'1234',
+	'010-1111-1111',
+	'jessy_0607@naver.com',
+	'경기도 김포시'
+);
+commit;

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="s">	
+
+	<!-- 회원가입 -->
+	<insert id="customer_insert" parameterType="customer">
+		insert into customer values(
+			seq_cus_idx.nextVal,
+			#{name},
+			#{id},
+			#{pwd},
+			#{phoneno},
+			#{email},
+			#{addr}		
+		)
+	</insert>
+	
+	<!-- 예약하기 -->
+	<insert id="reserv_insert" parameterType="Accom">
+		insert into reservation values(
+			seq_reserv_reservid.nextval,
+			#{surname},
+			#{name},
+			#{email},
+			#{phoneno},
+			'',
+			'',
+			TO_DATE(#{checkin},'MM/DD/YYYY'),
+			TO_DATE(#{checkout},'MM/DD/YYYY')
+		)
+	</insert>
+	
+	<!-- 아이디 중복확인 -->
+ 	<select id="id_one" resultType="customer" parameterType="String">
+		select * from customer where id=#{id}
+	</select>
+	
+	<!-- 이메일 중복확인 -->
+ 	<select id="email_one" resultType="customer" parameterType="String">
+		select * from customer where email=#{email}
+	</select>
+	
+	<!-- 로그인 -->
+ 	<select id="login" resultType="customer" parameterType="customer">
+		select * from customer where id=#{id} AND pwd=#{pwd}
+	</select>
+	
+	<!-- 예약숙소 확인 -->
+	<select id="myReservation" resultType="Accom" parameterType="java.lang.String">
+		select * from reservation
+	</select>
+	
+	<!-- 예약취소 -->
+	<delete id="delete">
+		delete from reservation
+	</delete>
+	
+	<!-- 마이페이지 회원 정보 -->
+	<select id="customer_list" resultType="customer">
+	select * from customer
+	</select>
+	
+	<!-- 수정 -->
+	 <update id = "customer_update" parameterType="customer">
+		update customer set 
+		pwd=#{pwd}, phoneno=#{phoneno}, email=#{email}, addr=#{addr}
+		where idx=#{idx}
+	</update>
+	
+	
+	
+<!-- 	<select id="profile" resultType="customer" parameterType="customer">
+	select r.reservid, r.name, r.hotelname, r.hoteladdr, r.checkin, r.checkout
+	from reservation r, customer c
+	where r.name = c.name;
+	</select> -->
+	
+</mapper>
+
+
+
+

@@ -1,0 +1,114 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.bg_img1{
+	opacity:0.7;
+	z-index:-99;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bg_img2{
+	opacity:1;
+	z-index:-100;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+	width: 100%;
+	height: 100px;
+	/* background-color: rgba(32, 128, 238, 0.705); */
+}
+.header p {
+	color: ivory;
+	text-align: center;
+	line-height: 100px;
+	font-family: cursive;
+	font-size: 70px;;
+	word-spacing: 20px;
+	letter-spacing: 5px;
+	margin: -100px;
+}
+.logo {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+.container {
+	width: 500px;
+	height: 450px;
+	border: none;
+	border-radius: 55px;
+	margin: 40px auto;
+	position: relative;
+    padding: 30px;
+	background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+
+/* input {
+    display: block;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background-color: #fff;;
+    padding: 8px 12px 8px 12px;
+    margin-bottom: 10px;
+} */
+.btn_modify, .btn_cancel {
+	background-color: #8EA8DB;
+	padding: 15px 50px;
+	color: white;
+	border-radius: 120px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 22px;
+    border: 0;
+    margin: 20px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+	 display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+}
+
+
+.name_box, .id_box, .tel_box, .tel_change_box, .email_box, .addr_box, .addr_change_box, .pwd_box {
+    position: relative;
+    margin-left: 40px;
+}
+.name, .id, .tel, .tel_change, .email, .addr, .addr_change, .pwd{
+    font-weight: 600;
+}
+.name_section, .id_section, .tel_section, .tel_change_section, .email_section, .addr_section, .addr_change_section, .pwd_section{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+.name_input, .id_input{
+    margin-left: 40px;
+}
+.tel_change_input, .email_input, .addr_change_input, .pwd_input{
+    border: none;
+    box-sizing: border-box;
+    background-color: #fff;;
+}

@@ -1,0 +1,24 @@
+create sequence seq_reservation_reservid;
+
+create table RESERVATION(
+	reservid VARCHAR2(50) primary key,
+	name VARCHAR2(50) not null,
+	phoneno VARCHAR2(20) not null,
+	email VARCHAR2(100) not null unique,
+	checkin DATE,
+	checkout DATE,
+	nights NUMBER(10),
+	confirmNo VARCHAR2(50)	--예약확인번호
+);
+
+insert into RESERVATION values(
+	seq_reservation_reservid.nextVal,
+	'정미혜',
+	'010-1111-1111',
+	'jessy_0607@naver.com',
+	sysdate,
+	sysdate,
+	'2',
+	'1234-567-890'
+);
+commit;

@@ -1,0 +1,169 @@
+create sequence seq_review_idx;
+
+create table REVIEW(
+	idx NUMBER(3) primary key,
+	id VARCHAR2(50) not null unique,
+	hotelname VARCHAR2(100) not null,
+	content VARCHAR2(1000),
+	regdate DATE
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'jessy0607',
+	'[OPEN]#루프탑캠핑#홍대입구역5분#Rooftop camping & BBQ party',
+	'진짜 너무 좋아요... 냄새도 좋고...
+	도심 속에서 이런 분위기라니요ㅜ
+	프라이빗하고 연락도 빨리 답해주시고 완전 대만족입니다!!
+	또 갈거에요!',
+	sysdate
+);
+
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'나영',
+	'[OPEN]#루프탑캠핑#홍대입구역5분#Rooftop camping & BBQ party',
+	'캠핑 온 것 같은 기분 느낄 수 있어서 좋았습니다~',
+	sysdate
+);
+
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'선영',
+	'[OPEN]#루프탑캠핑#홍대입구역5분#Rooftop camping & BBQ party',
+	'이쁘고 청결해요',
+	sysdate
+);
+
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'지현',
+	'[OPEN]#루프탑캠핑#홍대입구역5분#Rooftop camping & BBQ party',
+	'너무 좋았습니다.
+	캠핑장 느낌과 영화관 느낌을 모두 느낄 수 있었던 곳으로, 강력 추천합니다!',
+	sysdate
+);
+
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'Kyungji',
+	'[OPEN]#루프탑캠핑#홍대입구역5분#Rooftop camping & BBQ party',
+	'정말 숙소 예쁘고 테라스 ㅜㅜ 진짜 넓고 좋아요 . 빔도 있고 주방도 팬,와인잔,접시 등 다 있고 바베큐도 이용가능해요 도심 속에서 힐링하고 가여 감사합니다 !',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'Gyuwon',
+	'[OPEN]#루프탑캠핑#홍대입구역5분#Rooftop camping & BBQ party',
+	'편하게 잘쉬다 왔습니다 기회가 된다면 재방문의사도 있습니다 다른건 필요없고 본인 칫솔은 꼭 가져가세요 그리고 수건도 2장있어서 따로 챙겨가시면 좋으실듯합니다',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'다령',
+	'#청소비추가없음 #매일소독 #청소전문업체이용 #복층 GangnamSt(5min)#1',
+	'숙소가 너무 깔끔하고 이뻐서 좋았어요! 친구들이랑 재밌게 놀다갑니다!',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'선화',
+	'#청소비추가없음 #매일소독 #청소전문업체이용 #복층 GangnamSt(5min)#1',
+	'너무 깨끗하고 위치도 좋았습니다~~!
+	조금 아쉬운건 바닥이 너무 차가웠어요ㅠㅠ 친구가 감기에 걸렸다구 하더라구용 ㅠㅠ..
+	그거빼고는 너무너무너무~~~~!! 대만족입니다!',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'소윤',
+	'#청소비추가없음 #매일소독 #청소전문업체이용 #복층 GangnamSt(5min)#1',
+	'위치가 아주 좋았고 숙소 내부도 넓고 깔끔했어요. 구석구석 깨끗히 관리하시는 느낌이 들어요~ 2인이서 숙박했지만 돈이 아깝지 않았어요 추천합니다-!',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'유',
+	'#청소비추가없음 #매일소독 #청소전문업체이용 #복층 GangnamSt(5min)#1',
+	'위치 진짜 좋고 춥다는 후기 있어서 걱정했는데 추가 히터랑 담요 준비해주셔서 완전 따뜻했어요 감사합니다!!',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'은경',
+	'#청소비추가없음 #매일소독 #청소전문업체이용 #복층 GangnamSt(5min)#1',
+	'일단 위치는 말 할 것도 없이 훌륭하고 깨끗하고 넓어서 좋았습니다!!처음에는 좀 추웠지만 바로 응답해주시고 최대한 저희가 덜 춥도록 노력해주시는 모습에 정말 감동했습니다!!!최고의 숙소였지만 호스트님도 최고에요 ㅠㅠ',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'유림',
+	'#청소비추가없음 #매일소독 #청소전문업체이용 #복층 GangnamSt(5min)#1',
+	'홍대역앞에 있는 숙소라 너무 편했고
+	이곳에 살고 싶다는 생각도 들었네요~',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'승희',
+	'[Victory House]Connected Hongik Univ stn/Free wifi',
+	'화장실이 조금 ㅠ청결하지 못했지만 .. 방 크기와 복층에 침대는 정말 좋았습니다^^',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'승원',
+	'[Victory House]Connected Hongik Univ stn/Free wifi',
+	'좋아요! 추천합니다.',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'시아',
+	'[Victory House]Connected Hongik Univ stn/Free wifi',
+	'너무 깨끗하고 좋았습니다',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'수연',
+	'[Victory House]Connected Hongik Univ stn/Free wifi',
+	'시설보수 필요, 청소상태 미흡, 이불관리 필요
+	장점은
+	생각보다 넓은공간, 접근성',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'Sy',
+	'[Victory House]Connected Hongik Univ stn/Free wifi',
+	'복층 숙소가 멋집니다.',
+	sysdate
+);
+
+insert into REVIEW values(
+	seq_review_idx.nextVal,
+	'유진',
+	'[Victory House]Connected Hongik Univ stn/Free wifi',
+	'생각했던 것보다 집 크기도 크고
+	화장실이나 거실이나 침구류도 깨끗하고
+	좋았어요! 다음에 또 이용할 생각있습니당!!',
+	sysdate
+);
+commit;

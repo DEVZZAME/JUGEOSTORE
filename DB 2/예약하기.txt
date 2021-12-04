@@ -1,0 +1,35 @@
+
+
+
+시퀀스
+CREATE SEQUENCE seq_reserv_reservid;
+
+
+CREATE TABLE reservation (
+	reservid NUMBER(3) primary key,
+	name VARCHAR2(50) not null,
+	hotelname VARCHAR2(50) not null,
+	hoteladdr VARCHAR2(50) not null,
+	checkin DATE,
+	checkout DATE
+);
+
+INSERT INTO reservation VALUES (
+	seq_reserv_reservid.nextval,
+	'정미혜',
+	'강남 복층좋아',
+	'서울 구로구 구로동 100',
+	sysdate,
+	sysdate
+);
+commit;
+
+INSERT INTO reservation VALUES (
+	seq_reserv_reservid.nextval,
+	'강한솔',
+	'신촌좋아',
+	'서울  마포구 100',
+	sysdate,
+	sysdate
+);
+commit;

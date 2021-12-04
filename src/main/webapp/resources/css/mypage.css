@@ -1,0 +1,466 @@
+* {
+				margin: 0;
+				padding: 0;
+				cursor: pointer;
+			}
+			body {
+				background-color:white;
+			}
+			.header {
+				width: 100%;
+				height: 130px;/* 110px; */
+				border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+				box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.027);
+				position: relative;
+			}
+		/* 	.header p {
+				display: inline-block;
+				width: 50px;
+				padding: 15px;				
+				margin: 20px 320px;
+			} */
+			.logo{
+			    margin-top: 30px;
+			    margin-left: 30px;
+			    margin-bottom: 20px;
+			    display: flex;
+			    align-items: center;
+			   /* justify-content: center; */
+			  
+			}	
+			.nav {
+				list-style: none;
+				cursor: pointer;
+				position: absolute;
+				right: 330px;
+				top: 30px;
+				/* list-style-type: disc; */
+			}
+			li {
+				list-style-type: none;
+				padding: 5px;
+			}
+			a {
+				text-decoration: none;
+				display: block;
+			}
+			a:visited {
+				color: black;
+			}
+			.nav img {
+				position: relative;
+			}
+			.subNav {
+				width: 250px;
+				position: absolute;
+				left: -162px;
+				border-radius: 25px;
+				background-color: white;
+				box-shadow: 0 1px 1px 6px rgba(0, 0, 0, 0.027);
+				z-index: 1000;
+			}
+			.nav ul {
+				display: none;
+			}
+			.nav a {
+				padding: 8px;
+			}
+			
+			.nav li:hover ul {
+				display: block;
+			}
+			.nav ul li:hover a {
+				background: whitesmoke;
+				color: black;
+			}
+			.main {
+				width: 60%;
+				height: 800px;
+				margin: 0 auto;
+				margin-top: 35px;
+				position: relative
+			}
+			.info {
+				width: 315px;
+				height: auto;
+				border: 1px solid rgba(128, 128, 128, 0.349);
+				border-radius: 10px;
+				margin-top: 60px;				
+			}
+			.info p, .info h3, .info input {
+				margin: 10px 20px;
+			}
+			.info .getBadge {
+				padding: 13px 28px;
+				border-radius: 8px;
+				background-color: white;
+				border: 1px solid black;
+				font-weight: bold;
+				cursor: pointer;
+			}
+			.info .getBadge:hover {
+				background-color: rgba(128, 128, 128, 0.096);
+			}
+			.info hr {
+				margin: 20px;
+			}
+			.detail {
+				font-size: 12px;
+			}
+			.look {
+				font-weight: bold;
+				text-decoration: underline;
+			}
+			.shield {
+				display: block;
+				margin-top: 20px;
+				margin-left: 20px;
+				margin-bottom: 15px;
+			}
+			.content {
+				display: inline-block;
+				width: 650px;
+				height: auto;				
+				position: absolute;
+				top: 0;
+				left: 420px;
+			}
+			table {
+				margin-top: 25px;
+				margin-bottom: 35px;
+			}
+			table.myReservation {
+				border-collapse: collapse;
+				text-align: left;
+				line-height: 1.8;					
+				width: 390px;
+				height: 380px;				
+				margin: 0 auto;
+				margin-top: 22px;
+			}
+			table.myReservation thead th {
+				padding: 10px;
+				font-size:25px;
+				font-weight: bold;
+				vertical-align: top;
+				color: #369;
+				border-bottom: 3px solid #036;
+				text-align:center;					
+			}
+			table.myReservation tbody th {
+				width: 150px;
+				font-size:17px;
+				padding: 10px;
+				font-weight: bold;
+				vertical-align: top;
+				/* border-bottom: 1px solid #ccc;
+				border-left: 1px solid #ccc; */
+				/* background: #f3f6f7; */
+				text-align:center;
+			}
+			table.myReservation td {
+				width: 350px;
+				padding: 10px;
+				vertical-align: top;
+				/* border-bottom: 1px solid #ccc;
+				border-right: 1px solid #ccc; */
+				text-align:center;
+				font-size:17px;
+			}
+			footer {
+		    padding-top: 50px;
+		    background-color: #f7f7f8;
+			}
+			.footer_container {
+			    padding-left: 280px;
+			  padding-right: 60px;
+			    display: grid;
+			    grid-template-columns: 1fr 1fr 1fr 1fr;
+			    padding-bottom: 50px;  
+			}
+			.footer_block {
+			    display: flex;
+			    flex-direction: column;
+			}
+			.footer_link_title {
+			    color: black;
+			    font-weight: bold;
+			    font-size: 14px;
+			    padding-bottom: 15px;
+			}
+			.footer_link {
+			    color: black;
+			    font-weight: 300;
+			    font-size: 14px;
+			    padding-bottom: 7px;
+			}
+	        .footer li {
+	            padding: 8px;
+	        }
+	        .footer li a:hover {
+	            text-decoration: underline;
+	        }       
+	        .introduction, .community, .hosting, .support {
+	            width: 300px;
+	            margin-top: 40px;
+	            float: left;
+	        }
+	        .introduction {                             
+	            margin-left: 380px;                               
+	        }	        
+	        .additional {
+            	width: 700px;                       
+            	margin-top: 3px;
+        	}   
+	        .search, .input_info, .app {
+	            width: 200px;
+	            height: 187px;
+	            text-align: center;
+	            line-height: 1.7;
+	            float: left;            
+	            cursor: pointer;
+	        }	
+	        .additional > div {
+	            float: left;
+	            padding: 0;
+	            margin: 10px;
+	            overflow: hidden;
+	            position: relative;
+	        }
+	        .additional img {
+	            margin:0;
+	            padding:0;
+	            float:left;
+	            z-index:5;	       
+	        }	
+	        .additional .caption {
+	            position: absolute;
+	            top: 187px;
+	            background-color: rgba(0, 0, 0, 0.568);
+	            width: 200px;
+	            height: 165px;
+	            color: white;
+	            padding-top: 35px;
+	        }	
+	        .additional div:hover .caption {
+	            transform: translateY(-187px);
+	            transition: all 0.6s ease-in-out;  
+	        }	
+	        .additional p {
+	            margin-top: 23px;
+	        }  
+			.cancel{
+				text-align: center; 
+				font-size:18px;
+				width:165px;
+				height:40px;
+				background:none;
+			    border-radius: 10px;
+			    position: absolute;
+			    margin: 0 auto;
+			    left: 31%;
+				top: 84%;	
+			}	               
+			.header_right_container {
+			    /* display: flex; */
+			    /* justify-content: center;
+			    align-items: center; */
+			    padding: 0px;
+			    background-color: white;
+			    color: black;
+			   /*  font-size: 30px; */
+			}
+			.header_sub{
+			    width: 100%;
+			    height: 10%;
+			    border-radius: 40px;
+			    display: flex;
+			    align-items: left;
+			    justify-content: center;
+			    flex-direction: column;
+			    margin-top: 10px;
+			}
+			.header_bar{
+				position: absolute;
+			    width: 335px;
+			    height: 450px;
+			    max-width: 100%;
+			    border-radius: 40px;
+			    display: none;
+			    align-items: left;
+			    justify-content: center;
+			    padding-left: 5%;
+			    padding-right: 5%;
+			    flex-direction: column;
+			    background: #FFB2F5;
+			   /*  margin-top: 20px;
+			     margin-left:-290px; */
+			  /*   line-height: 40px; */
+			  	z-index: 999;
+			}
+			.location{
+			  /*   width: 150%;
+			    height: 50%;
+			    border-radius: 40px; */
+			   /*  display: flex; */
+			    /* align-items: left; */
+			   /*  justify-content: center; */
+			    cursor: pointer;
+			    padding-left: 0px;
+			    /* padding-right: 5%; */
+			    flex-direction: column;
+			    font-size:20px;
+			}
+			 .background {
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100vh;
+			    background-color: rgba(0, 0, 0, 0.3);
+			    z-index: 1000;
+			
+			    /* 숨기기 */
+			    z-index: -1;
+			    opacity: 0;
+			    -ms-overflow-style: none;
+			  }
+			  ::-webkit-scrollbar{
+			      display: none;
+			  }
+			  .show {
+			    opacity: 1;
+			    z-index: 1000;
+			    transition: all 1s;
+			  }
+			  .window {
+			    position: relative;
+			    width: 100%;
+			    height: 100%;
+			  }
+			  .popup {
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    padding: 30px;
+			    transform: translate(-50%, -50%);
+			    background-color: #ffffff;
+			    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+			    border-radius: 20px;
+			    /* 임시 지정 */
+			    width: auto;
+			    height: 560px;
+			
+			    /* 초기에 약간 아래에 배치 */
+			    transform: translate(-50%, 70%);
+			    /* 스크롤 */
+			    -ms-overflow-style: none;
+			  }
+			  .pop::-webkit-scrollbar{
+			      display: none;
+			  }
+			  .show .popup {
+			    transform: translate(-50%, -50%);
+			    transition: all 0.5s;
+			  }
+			  #close{
+			      outline: 0;
+			      border: 0;
+			      background-color: white;
+			      font-size: 20px;
+			      border-radius: 70px;
+			  }
+			  #close:hover{
+			      background: url(resources/img/closehover.png);
+			  }
+			  #show{
+			    border: 0;
+			    outline: 0;
+			    background: white;
+			    text-decoration: underline;
+			    cursor: pointer;
+			    font-size: 16px;
+			    font-weight: bold;
+			    display: block;
+			  }
+			  #show:hover{
+			      opacity: 0.5;
+			  }
+
+ 			   .con_background {
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100vh;
+			    background-color: rgba(0, 0, 0, 0.3);
+			    z-index: 1000;
+			
+			    /* 숨기기 */
+			    z-index: -1;
+			    opacity: 0;
+			    -ms-overflow-style: none;
+			  }
+			  ::-webkit-scrollbar{
+			      display: none;
+			  }
+			  .con_show {
+			    opacity: 1;
+			    z-index: 1000;
+			    transition: all 1s;
+			  }
+			  .con_window {
+			    position: relative;
+			    width: 100%;
+			    height: 100%;
+			
+			  }
+			  .con_popup {
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    padding: 30px;
+			    transform: translate(-50%, -50%);
+			    background-color: #ffffff;
+			    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+			    border-radius: 20px;
+			    /* 임시 지정 */
+			    width: auto;
+			    height: 560px;
+			
+			    /* 초기에 약간 아래에 배치 */
+			    transform: translate(-50%, 70%);
+			    /* 스크롤 */
+			    -ms-overflow-style: none;
+			  }
+			  .con_pop::-webkit-scrollbar{
+			      display: none;
+			  }
+			
+			  .con_show .con_popup {
+			    transform: translate(-50%, -50%);
+			    transition: all 0.5s;
+			  }
+			  #con_close{
+			      outline: 0;
+			      border: 0;
+			      background-color: white;
+			      font-size: 20px;
+			      border-radius: 70px;
+			  }
+			  #con_close:hover{
+			    background: url(resources/img/closehover.png);
+			}
+			  #con_show{
+			    border: 0;
+			    outline: 0;
+			    background: white;
+			    text-decoration: underline;
+			    cursor: pointer;
+			    font-size: 16px;
+			    font-weight: bold;
+			  }
+			  #con_show:hover{
+			    opacity: 0.5;
+			}
+			   } 

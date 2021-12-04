@@ -1,0 +1,69 @@
+숙박테이블
+
+create sequence seq_stay_idx;
+
+create table STAY(
+	idx NUMBER(3) primary key,
+	hotelname VARCHAR2(100) not null unique,
+	hoteladdr VARCHAR2(50) not null,
+	hotelprice VARCHAR2(30) not null,
+	city VARCHAR2(30) not null
+);
+
+insert into STAY values(
+	seq_stay_idx.nextVal,
+	'[OPEN]#루프탑캠핑#홍대입구역5분#Rooftop camping & BBQ party',
+	'Changjeon-dong, Mapo-gu, 서울, 한국',
+	'138,000',
+	'서울'
+);
+
+insert into STAY values(
+	seq_stay_idx.nextVal,
+	'#청소비추가없음 #매일소독 #청소전문업체이용 #복층 GangnamSt(5min)#1',
+	'Seocho-dong, Seocho-gu, 서울, 한국',
+	'86,647',
+	'서울'
+);
+
+insert into STAY values(
+	seq_stay_idx.nextVal,
+	'[Victory House]Connected Hongik Univ stn/Free wifi',
+	'Donggyo-dong, Mapo-gu, 서울, 한국',
+	'75,300',
+	'서울'
+);
+commit;
+------------------------------------------------------------------------------------------------------------------------------------------
+insert into STAY values(
+	seq_stay_idx.nextVal,
+	'코코 하우스 #건대입구#소독#건대맛의거리#커먼그라운드#먹자골목',
+	'Hwayang-dong, Gwangjin-gu, 서울, 한국',
+	'45,847',
+	'서울'
+);
+
+insert into STAY values(
+	seq_stay_idx.nextVal,
+	'#4 Clean & cozy room right next to Gangnam Station',
+	'Gangnam-gu, 서울, 한국',
+	'72,977',
+	'서울'
+);
+
+insert into STAY values(
+	seq_stay_idx.nextVal,
+	'[서촌 한옥 독채] 모임장소/파티룸/LP턴플레이어/빔프로젝터/넷플릭스',
+	'Jongno-gu, 서울, 한국',
+	'150,118',
+	'서울'
+);
+
+insert into STAY values(
+	seq_stay_idx.nextVal,
+	'HH house #Han river view #Mapo St. 1min #Cozy',
+	'Dohwa-dong, Mapo-gu, 서울, 한국',
+	'67,000',
+	'서울'
+);
+commit;
